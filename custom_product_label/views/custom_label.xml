@@ -21,7 +21,8 @@
                 <!-- Derecha: código de barras y logo -->
                 <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 1mm; width: 32mm;">
                     <t t-if="barcode">
-                        <div t-out="barcode" t-options="{'widget': 'barcode', 'quiet': 0, 'symbology': 'auto', 'img_style': 'width:30mm;height:10mm'}"/>
+                        <div t-out="barcode" 
+                            t-options="{'widget': 'barcode', 'quiet': 0, 'symbology': 'auto', 'img_style': 'width:15mm;height:10mm'}"></div>
                     </t>
                     <img src="https://github.com/AdminDeglia/odoo_product_dimensions_with_product_label/blob/17.0/Logo_valenciana.png?raw=true" alt="Logo Valenciana" style="width: 10mm; height: 10mm;"/>
                 </div>
