@@ -46,3 +46,9 @@ class ProductLabelReportCustom(models.AbstractModel):
             'extra_html': layout_wizard.extra_html,
             'pricelist': layout_wizard.pricelist_id,
         }
+
+class ProductLabelReportDymo(models.AbstractModel):
+    _inherit = 'report.product.report_product_label_dymo'
+
+    def _get_report_values(self, docids, data):
+        return self._prepare_custom_data(self.env, docids, data)

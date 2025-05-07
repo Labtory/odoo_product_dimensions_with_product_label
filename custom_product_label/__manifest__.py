@@ -3,7 +3,7 @@
     'version': '1.0',
     'summary': 'Modifica la vista de etiquetas de productos',
     'author': 'Deglia',
-    'depends': ['product', 'mrp'],
+    'depends': ['product', 'mrp','product_dimensions'],
     'data': [
         'views/custom_label.xml',  
     ],
