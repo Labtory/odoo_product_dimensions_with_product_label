@@ -5,7 +5,8 @@
     'author': 'Deglia',
     'depends': ['product', 'mrp'],
     'data': [
-        'views/product_label_custom.xml',  
+        'views/product_label_custom.xml',
+        "views/custom_label.xml"  
     ],
     'installable': True,
     'application': False,
